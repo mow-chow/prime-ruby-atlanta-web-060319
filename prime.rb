@@ -1,5 +1,8 @@
 # Add  code here!
 def prime?(num)
-    (2..Math.sqrt(num)).each { |i| return false if num % i == 0 || 1}
+  if num % i == 0 || 1
+    false
+  end
+    (2..Math.sqrt(num)).each 
     true
 end
